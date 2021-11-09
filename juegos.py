@@ -27,7 +27,7 @@ def menu():
             print("\nTombola")
             tombola()
         elif i == 2:
-            print("Juego nuevo")
+            print("\nDatos que suman 7")
         elif i == 3:
             break
         else:
@@ -35,3 +35,14 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+
+def dados():
+    dado1 = random.randint(1,6)
+    dado2 = random.randint(1,6)
+    print("Primer dado: ",dado1)
+    print("Segundo dado: ",dado2)
+    suma = dado1 + dado2
+    if suma == 7:
+        print("!Ganaste!")
+    else:
+        print("Mejor suerte para la proxima")
